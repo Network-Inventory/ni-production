@@ -15,6 +15,7 @@ services:
       - DJANGO_SETTINGS_MODULE
       - DJANGO_DEBUG
       - DJANGO_SECRET_KEY
+      - NI_BASE_URL
     depends_on:
       - db
     ports:
@@ -22,6 +23,8 @@ services:
 
   frontend:
     image: ghcr.io/network-inventory/ni-frontend/ni-frontend:latest
+    environment:
+      - NI_BASE_URL
     depends_on:
       - backend
     ports:
