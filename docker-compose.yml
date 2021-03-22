@@ -16,6 +16,8 @@ services:
       - DJANGO_DEBUG
       - DJANGO_SECRET_KEY
       - NI_BASE_URL
+      - POSTGRES_DB
+      - POSTGRES_PASSWORD
     depends_on:
       - db
     ports:
