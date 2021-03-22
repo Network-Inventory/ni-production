@@ -1,12 +1,16 @@
 # Network Inventory
 
-I started this project in order to have solution for keeping an
-inventory over my various servers and other network equipment.
+I started this project in order to have solution for keeping an inventory
+over my various servers and other network equipment.
 
-The idea later expanded to be an inventory for multiple customers.
-In addition the customers should be able to access their inventory but only see the items they own.
+The idea later expanded to be an inventory for multiple customers. In
+addition the customers should be able to access their inventory but only see
+the items they own.
 
-This project consists of the [backend](https://github.com/Network-Inventory/ni-backend) in Django and the [frontend](https://github.com/Network-Inventory/ni-frontend) written in VueJS.
+This project consists of the
+[backend](https://github.com/Network-Inventory/ni-backend) in Django and the
+[frontend](https://github.com/Network-Inventory/ni-frontend) written in
+VueJS.
 
 ## Production Setup
 
