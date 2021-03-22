@@ -11,8 +11,6 @@ services:
 
   backend:
     image: ghcr.io/network-inventory/ni-backend/ni-backend:latest
-    volumes:
-      - ./backend:/code
     environment:
       - DJANGO_SETTINGS_MODULE
       - DJANGO_DEBUG
@@ -28,5 +26,3 @@ services:
       - backend
     ports:
       - 80:80
-    volumes:
-      - ./backend/static:/home/app/backend/static
