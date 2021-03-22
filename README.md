@@ -17,8 +17,8 @@ VueJS.
 1. Clone the repository
 2. Copy the `.env-example` file to `.env` and change the `POSTGRES_PASSWORD`
    and `DJANGO_SECRET_KEY` variables to something secure.
-3. Replace the value for NI_BASE_URL to the URL of your website.
-3. Run `docker-compose up` and connect to URL defined in NI_BASE_URL
+3. Replace the value for `NI_BASE_URL` to the URL of your website.
+3. Run `docker-compose up` and connect to URL defined in `NI_BASE_URL`
 
 #### Environment Variables
 
