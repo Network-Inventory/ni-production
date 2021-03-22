@@ -13,7 +13,8 @@ This project consists of the [backend](https://github.com/Network-Inventory/ni-b
 1. Clone the repository
 2. Copy the `.env-example` file to `.env` and change the `POSTGRES_PASSWORD`
    and `DJANGO_SECRET_KEY` variables to something secure.
-3. Run `docker-compose up` and connect to http://localhost
+3. Replace the value for NI_BASE_URL to the URL of your website.
+3. Run `docker-compose up` and connect to URL defined in NI_BASE_URL
 
 #### Environment Variables
 
@@ -28,6 +29,9 @@ supported.
 - **DJANGO_SETTINGS_MODULE** the path to the settings file to use in the
   container. This requires a dotet syntax. The default is
   `network_inventory.settings.docker`.
+- **NI_BASE_URL** the URL from you serve the application. This is required so
+  that VueJS can find the backend API and the backend API allows connections
+  from that URL.
 
 ## Documentation
 
