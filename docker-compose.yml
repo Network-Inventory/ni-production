@@ -10,7 +10,7 @@ services:
       - ./db_data:/var/lib/postgresql/data/
 
   backend:
-    image: nebucatnetzer/ni-backend
+    image: ghcr.io/network-inventory/ni-backend/ni-backend:latest
     volumes:
       - ./backend:/code
     environment:
@@ -23,7 +23,7 @@ services:
       - 8000:8000
 
   frontend:
-    image: nebucatnetzer/ni-frontend
+    image: ghcr.io/network-inventory/ni-frontend/ni-frontend:latest
     depends_on:
       - backend
     ports:
