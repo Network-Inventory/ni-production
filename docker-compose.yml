@@ -13,8 +13,8 @@ services:
     image: ghcr.io/network-inventory/ni-backend/ni-backend:latest
     environment:
       - DJANGO_SETTINGS_MODULE
-      - DJANGO_DEBUG
       - DJANGO_SECRET_KEY
+      - DJANGO_DEBUG
       - NI_HOST
       - NI_MODE
       - POSTGRES_DB
