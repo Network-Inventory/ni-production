@@ -18,8 +18,7 @@ VueJS.
 2. Copy the `.env-example` file to `.env` and change the `POSTGRES_PASSWORD`
    and `DJANGO_SECRET_KEY` variables to something secure.
 3. Replace the value for `NI_HOST` to the domain of your website.
-    a. If you want to test this application locally change `NI_MODE` to
-    `development` otherwise it will enforce HTTPS.
+   If you want to debug the backend `NI_MODE` to `development`.
 3. Run `docker-compose up` and connect to domain defined in `NI_HOST`
 
 #### Environment Variables
@@ -33,9 +32,8 @@ supported.
 - **DJANGO_SETTINGS_MODULE** the path to the settings file to use in the
   container. This requires a dotet syntax. The default is
   `network_inventory.settings.docker`.
-- **NI_HOST** the domain from you serve the application. This is required so
-  that VueJS can find the backend API and the backend API allows connections
-  from that domain.
+- **NI_HOST** the domain from you serve the application. This is required in
+  order for the backend to work properly.
 - **NI_MODE** the state of the application, should be `production` for a
   production environment.
 
